@@ -1,0 +1,17 @@
+{
+  "name": "data-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:thejsguy-learnk8s/data-api.git",
+  "author": "Aman Kumar Saini",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2"
+  }
+}
