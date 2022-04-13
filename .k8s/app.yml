@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: learn-k8s-data-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: learn-k8s-data-api
+  template:
+    metadata:
+      name: learn-k8s-data-api-pod
+      labels:
+        app: learn-k8s-data-api 
+    spec:
+      containers:
+      - name: learn-k8s-data-api
+        image: thejsguy/learn-k8s-data-api
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 2001
+          protocol: TCP
+      restartPolicy: Always
